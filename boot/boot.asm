@@ -17,8 +17,8 @@ multiboot_header:
 	; framebuffer request (safe, widely supported)
 dd 5       ; type = framebuffer
 dd 24      ; size
-dd 800     ; width
-dd 600     ; height
+dd 1920     ; width
+dd 1080     ; height
 dd 32      ; depth
 dd 0       ; padding
 
@@ -40,6 +40,7 @@ start:
     cli
 	mov esp, stack + 8192
 	push ebx
+	push eax
     call kernelMain
     hlt
     jmp $
