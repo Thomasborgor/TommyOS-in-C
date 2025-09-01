@@ -37,7 +37,7 @@ clean:
 	
 commit:
 	git add .
-	git commit -m "i did something"
+	git commit -m "first commit"
 	git branch -M main
-	git remote set-url origin git@github.com:Thomasborgor/TommyOS-in-C.git
+	git remote add origin https://github.com/Thomasborgor/TommyOS-in-C.git
 	git push -u origin main
