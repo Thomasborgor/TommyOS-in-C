@@ -1,0 +1,12 @@
+void printc(char c, unsigned char color);
+void printstr(char* string, byte color);
+void printint(unsigned short n);
+int strcmplen(char* a, char* b, int len);
+int strcmp(char* a, char* b);
+void scroll_screen(unsigned int n);
+void strcpy(char* a, char* b);
+void listfile(DirectoryEntry* entry, unsigned char color);
+void vga_set_cursor(unsigned short pos);
+unsigned short vga_get_cursor();
+unsigned short* video = (unsigned short*)0xB8000;
+unsigned short video_offset = 0;
